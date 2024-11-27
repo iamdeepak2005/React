@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';  // Import React
+import './App.css';  // Import CSS file for App
+import Header from './Component/header2.0/header';  // Ensure path matches the folder structure
+import Inbox from './Component/inbox/Inbox';  // Ensure path matches the folder structure
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Render the Header component */}
+      <Header /> 
+      {/* Render the Inbox component */}
+      {/* <Inbox /> */}
+    </>
   );
 }
 
